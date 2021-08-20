@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = ReactRaffle;
 
+var _react = _interopRequireDefault(require("react"));
+
 var _Container = _interopRequireDefault(require("@material-ui/core/Container"));
 
 var _Grid = _interopRequireDefault(require("@material-ui/core/Grid"));
@@ -19,19 +21,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function ReactRaffle() {
   const classes = useStyles();
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     className: classes.root
-  }, /*#__PURE__*/React.createElement(_Container.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Container.default, {
     maxWidth: false
-  }, /*#__PURE__*/React.createElement(_Grid.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
     container: true
-  }, /*#__PURE__*/React.createElement(_Grid.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
     item: true,
     xs: 12
-  }, /*#__PURE__*/React.createElement(_Typography.default, null, "Test")), /*#__PURE__*/React.createElement(_Grid.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, null, "Test")), /*#__PURE__*/_react.default.createElement(_Grid.default, {
     item: true,
     xs: 12
-  }, /*#__PURE__*/React.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
     variant: "contained",
     color: "primary"
   }, "Button")))));
